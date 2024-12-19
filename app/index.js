@@ -156,6 +156,15 @@ module.exports = class extends Generator {
         packageName
       }
     );
+	
+    this.fs.copyTpl(
+      this.templatePath('service/teardown.go'),
+      this.destinationPath('atlas.com/' + resourceName + '/service/teardown.go'), {
+        resourceName,
+        resourceAcronym,
+        packageName
+      }
+    );
   }
 
   end() {
