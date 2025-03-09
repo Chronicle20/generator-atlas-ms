@@ -1,3 +1,3 @@
 module atlas-<%= resourceName %>
 
-go 1.23.1
+go 1.24.1
