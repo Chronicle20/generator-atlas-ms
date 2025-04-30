@@ -1,4 +1,4 @@
-const Generator = require('yeoman-generator');
+const Generator = require('yeoman-generator').default;
 const {
   execSync
 } = require('child_process');
